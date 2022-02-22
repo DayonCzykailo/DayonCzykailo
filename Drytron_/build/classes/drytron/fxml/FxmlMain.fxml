@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane fx:id="spMain" dividerPositions="0.29797979797979796" maxHeight="600.0" maxWidth="900.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="drytron.controller.FxmlMainController">
+  <items>
+    <AnchorPane fx:id="apBtn" maxHeight="600.0" maxWidth="150.0" minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/fxmlmain.css">
+         <children>
+            <VBox fx:id="vbBtn" layoutX="-5.0" layoutY="264.0" prefHeight="335.0" prefWidth="162.0">
+               <children>
+                  <Group fx:id="gpBtn">
+                     <children>
+                        <Button fx:id="btnCad" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" stylesheets="@../css/fxmlmain.css" text="CADASTRAR">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnAlt" layoutY="48.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" text="ALTERAR">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnDel" layoutY="96.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" text="DELETAR">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnRel" layoutY="144.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" text="RELATORIO">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnOp" layoutY="192.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" text="OPÇÕES">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnAju" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="161.0" text="AJUDA">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                        <Button fx:id="btnSair" layoutY="288.0" mnemonicParsing="false" onAction="#btnClickSairAction" prefHeight="48.0" prefWidth="161.0" text="SAIR">
+                           <font>
+                              <Font name="Aharoni Bold" size="14.0" />
+                           </font></Button>
+                     </children>
+                  </Group>
+               </children>
+            </VBox>
+            <AnchorPane fx:id="apLogo" layoutX="-5.0" prefHeight="177.0" prefWidth="161.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ImageView fitHeight="138.0" fitWidth="149.0" layoutX="11.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/iconPlanet.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="150.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/iconBackground02.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="7.0" layoutY="239.0" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #FFFFFF;" stylesheets="@../css/fxmlmain.css" text="MENU:" textAlignment="CENTER">
+               <font>
+                  <Font name="Aharoni Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="196.0" prefHeight="36.0" prefWidth="123.0" text="AREA: PRODUTOS." textAlignment="CENTER">
+               <font>
+                  <Font name="Aharoni Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+    <AnchorPane fx:id="apTable" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="root" stylesheets="@../css/fxmlmain.css">
+         <children>
+            <DatePicker fx:id="calendario" layoutX="624.0" layoutY="14.0" prefHeight="25.0" prefWidth="104.0" showWeekNumbers="true" />
+            <Line endX="522.0" endY="1.52587890625E-5" layoutX="125.0" layoutY="103.0" startX="-125.0" startY="1.52587890625E-5" stroke="#1277c9" />
+            <Line endX="-53.0" endY="-62.0" layoutX="53.0" layoutY="62.0" startX="-52.0" startY="537.0" stroke="#157dc3" />
+            <Button fx:id="btnPes" layoutX="86.0" layoutY="27.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="PESQUISAR">
+               <font>
+                  <Font name="Aharoni Bold" size="12.0" />
+               </font></Button>
+            <TextField fx:id="txtPes" layoutX="174.0" layoutY="27.0" />
+            <Button fx:id="btnCliente" layoutX="16.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnClickClienteTelaAction" prefHeight="57.0" prefWidth="70.0" rotate="90.0" text="CLIENTE">
+               <font>
+                  <Font name="Aharoni Bold" size="13.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tbMain" layoutX="14.0" layoutY="65.0" prefHeight="525.0" prefWidth="734.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="14.0">
+              <columns>
+                <TableColumn fx:id="tcId" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="tcNome" text="NOME" />
+                  <TableColumn fx:id="tcGenero" prefWidth="53.0" text="GENERO" />
+                  <TableColumn fx:id="tcPlat" prefWidth="87.0" text="PLATAFORMA" />
+                  <TableColumn fx:id="tcLanc" prefWidth="88.0" text="LANÇAMENTO" />
+                  <TableColumn fx:id="tcDese" prefWidth="118.0" text="DESENVOLVEDOR" />
+                  <TableColumn fx:id="tcPubl" minWidth="7.0" prefWidth="81.0" text="PUBLICADOR" />
+                  <TableColumn fx:id="tcIdio" prefWidth="64.0" text="IDIOMA" />
+                  <TableColumn fx:id="tcPrec" prefWidth="59.0" text="PREÇO" />
+                  <TableColumn fx:id="tcEsto" prefWidth="63.0" text="ESTOQUE" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

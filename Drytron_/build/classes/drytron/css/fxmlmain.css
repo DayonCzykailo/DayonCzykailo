@@ -1,0 +1,29 @@
+ 
+
+.root{
+  // -fx-background-color: "aquamarine";
+   -fx-background-image: url("/drytron/icon/iconBackground01.jpg");
+   
+}
+/*.label{
+    -fx-font-size: 20;
+    -fx-font-family: "Lucida Console";
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}*/
+.toggleButton{
+    -fx-background-radius: 30 30 30 30;
+}
+
+.button{
+    -fx-background-color: #239c9c;
+    -fx-background-radius: 30 0 0 30;
+}
+.button:hover{
+    -fx-background-color: #07f7f7;
+    -fx-background-radius: 30 0 0 30;
+}
+.button:pressed{
+    -fx-background-color: #239c9c;
+    -fx-background-radius: 30 0 0 30;
+}

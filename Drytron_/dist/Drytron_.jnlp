@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Drytron_.jnlp">
+  <information>
+    <title>Drytron_</title>
+    <vendor>patyu</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Drytron_.jar" size="186688" download="eager" />
+    <jar href="lib\charm-glisten-4.4.1-javadoc.jar" size="2817088" download="eager" />
+    <jar href="lib\charm-glisten-6.0.2-javadoc.jar" size="261" download="eager" />
+    <jar href="lib\charm-glisten-6.1.0-javadoc.jar" size="3543225" download="eager" />
+    <jar href="lib\charm-glisten-6.1.0.jar" size="968840" download="eager" />
+    <jar href="lib\jfoenix-8.0.8.jar" size="2708772" download="eager" />
+    <jar href="lib\scenebuilder-kit-8.5.0.jar" size="2829531" download="eager" />
+    <jar href="lib\sqlite-jdbc-3.20.0.jar" size="6637012" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="drytron.main.Drytron"  name="Drytron_" />
+  <update check="always"/>
+</jnlp>
