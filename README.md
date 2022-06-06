@@ -1,3 +1,4 @@
+- Apenas Umm projeto antigo do drytron, drytron_app é sua versão mais atualizada e recente.
 - 👋 @DayonCzykailo
 - 👀 Projeto integrador II ...
 
