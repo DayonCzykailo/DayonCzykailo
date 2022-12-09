@@ -43,6 +43,6 @@
 <p align="center"><img align="center" src="https://profile-counter.glitch.me/{DayonCzykailo}/count.svg"/></p> 
 <br></div>
 
-![snake gif](https://github.com/DayonCzykailo/DayonCzykailo/blob/output/github-contribution-grid-snake.gif)
+![Snake animation](https://github.com/DayonCzykailo/DayonCzykailo/blob/output/github-contribution-grid-snake.svg)
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=F70000&height=120&section=footer"/>
